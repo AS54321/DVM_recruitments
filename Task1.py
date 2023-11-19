@@ -243,34 +243,6 @@ while(response!='QUIT' and done!=count):
 		else:
 			print("Slot for {} is already set".format(Section.type[typenum]))
 
-		'''	
-		if courses[current].Lab and response=='Lab':
-			print('Sections are:')
-			courses[current].labdisplay()
-			response=input("Which section you choose?")
-			choice=Section.sectionnum(response)
-			if courses[current].sects[3][choice].clash('Lab')=="Yes":
-				print("Sorry this time slot clashes, we have reset clashing time intervals")
-			else:
-				done+=1
-				print("The slot was set")
-					
-		
-		if courses[current].Tut and response=='Tut':
-			success=0
-			print('Sections are:')
-			courses[current].tutdisplay()
-			response=input("Which section you choose?")
-			choice=Section.sectionnum(response)
-			if courses[current].sects[2][choice].clash('Tut')=="Yes":
-				print("Sorry this time slot clashes, we have reset clashing time intervals")
-			else:
-				print("The slot was set")
-				done+=1
-				print (count,done)
-		'''
-
-
 	else:
 		print("The value is wrong")
 	not_done=''
