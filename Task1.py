@@ -1,3 +1,4 @@
+#it is assumed excel files are there in folder named excel files and user adds new files to userfiles folder
 import pandas
 import os
 
